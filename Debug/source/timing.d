@@ -6,6 +6,9 @@ source/timing.o source/timing.d: ../source/timing.c \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/deprecated_definitions.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/portmacro.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/mpu_wrappers.h \
+ /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/queue.h \
+ /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/task.h \
+ /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/list.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/device/fsl_device_registers.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/device/MIMXRT1021.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/CMSIS/core_cm7.h \
@@ -42,6 +45,12 @@ source/timing.o source/timing.d: ../source/timing.c \
 /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/portmacro.h:
 
 /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/mpu_wrappers.h:
+
+/home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/queue.h:
+
+/home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/task.h:
+
+/home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/list.h:
 
 /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/device/fsl_device_registers.h:
 

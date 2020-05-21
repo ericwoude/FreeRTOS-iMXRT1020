@@ -7,6 +7,7 @@
 
 /* FreeRTOS kernel includes. */
 #include "FreeRTOS.h"
+#include "queue.h"
 
 /* Freescale includes. */
 #include "fsl_device_registers.h"
@@ -24,21 +25,49 @@
 #define gptTICK_RATE_HZ (10 * (unsigned int) configTICK_RATE_HZ)
 #define gptTICK_RATE_US (1000000 / gptTICK_RATE_HZ)
 
+#define queue_size 100
+
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
 void ConfigureRunTimeStatsTimer();
 void GPT2_IRQHandler();
 void TimerReset();
+void TimerLog(const char* name);
 void TimerPrint();
+void QueueInit();
+void vApplicationIdleHook();
 
 /*******************************************************************************
  * Globals
  ******************************************************************************/
+static QueueHandle_t xInfoQueue = NULL;
+
+/*
+ * The max bound is 4,294,967,295, which means periods shorter than
+ * 4294967295 / (1 / (500 * 10^-6)) = 2147483 seconds can be counted
+ */
 unsigned long RunTimeCounter;
-// max bound 4,294,967,295
-// which means periods shorter than 4294967295 / (1 / (500 * 10^-6)) = 2147483 seconds can be counted
-// every second the counter should be 2000 higher
+
+/*
+ * The data structure contains the task's name and the run time in milliseconds.
+ */
+typedef struct
+{
+	const char* name;
+	unsigned long time;
+} task_info;
+
+void QueueInit()
+{
+	xInfoQueue = xQueueCreate(queue_size, sizeof(task_info));
+
+    /* Enable queue view in MCUX IDE FreeRTOS TAD plugin. */
+    if (xInfoQueue != NULL)
+    {
+        vQueueAddToRegistry(xInfoQueue, "LogQ");
+    }
+}
 
 /*!
  * @brief Timer responsible for keeping track of run time statistics.
@@ -96,9 +125,45 @@ void TimerReset()
 }
 
 /*!
- * @brief Reads the run time counter in milliseconds seconds.
+ * @brief Logs the info of the task and sends it to a queue.
  */
-void TimerPrint(const char* name)
+void TimerLog(const char* name)
 {
-	PRINTF("%s %u\n", name, COUNT_TO_MSEC(RunTimeCounter, gptTICK_RATE_HZ));
+	task_info* info = malloc(sizeof(task_info));
+	if (info)
+	{
+		info->name = name;
+		info->time = COUNT_TO_MSEC(RunTimeCounter, gptTICK_RATE_HZ);
+
+		xQueueSend(xInfoQueue, (void *) &info, ( TickType_t ) 0);
+	}
+	else
+	{
+		PRINTF("Error creating task_info struct");
+	}
+}
+
+/*!
+ * @brief Tries to receive a task info from queue and prints the content.
+ */
+void TimerPrint()
+{
+	task_info* info;
+
+	if (xInfoQueue != NULL)
+	{
+		for (;;)
+		{
+			/* Performs a non-blocking receive. */
+			if (xQueueReceive(xInfoQueue, &info, ( TickType_t ) 0 ) == pdPASS)
+			{
+				PRINTF("%s %u\n", info->name, info->time);
+			}
+		}
+	}
+}
+
+void vApplicationIdleHook()
+{
+	TimerPrint();
 }

@@ -8,9 +8,8 @@ source/freertos_main.o source/freertos_main.d: ../source/freertos_main.c \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/mpu_wrappers.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/task.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/list.h \
- /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/queue.h \
- /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/task.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/timers.h \
+ /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/task.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/device/fsl_device_registers.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/device/MIMXRT1021.h \
  /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/CMSIS/core_cm7.h \
@@ -52,11 +51,9 @@ source/freertos_main.o source/freertos_main.d: ../source/freertos_main.c \
 
 /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/list.h:
 
-/home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/queue.h:
+/home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/timers.h:
 
 /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/task.h:
-
-/home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/amazon-freertos/freertos_kernel/include/timers.h:
 
 /home/riccus/Documents/MCUXpresso_11.1.1_3241/workspace/rt1020_freertos_hello_scheduler/device/fsl_device_registers.h:
 

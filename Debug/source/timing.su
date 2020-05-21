@@ -5,7 +5,10 @@ fsl_gpt.h:270:20:GPT_StartTimer	16	static
 fsl_gpt.h:394:20:GPT_SetOutputCompareValue	24	static
 fsl_gpt.h:442:20:GPT_EnableInterrupts	16	static
 fsl_gpt.h:496:20:GPT_ClearStatusFlags	16	static
-timing.c:46:6:ConfigureRunTimeStatsTimer	48	static
-timing.c:81:6:GPT2_IRQHandler	8	static
-timing.c:93:6:TimerReset	4	static
-timing.c:101:6:TimerPrint	32	static
+timing.c:61:6:QueueInit	8	static
+timing.c:75:6:ConfigureRunTimeStatsTimer	48	static
+timing.c:110:6:GPT2_IRQHandler	8	static
+timing.c:122:6:TimerReset	4	static
+timing.c:130:6:TimerLog	40	static
+timing.c:149:6:TimerPrint	16	static
+timing.c:166:6:vApplicationIdleHook	8	static

@@ -9,7 +9,6 @@
 /* FreeRTOS kernel includes. */
 #include "FreeRTOS.h"
 #include "task.h"
-#include "queue.h"
 #include "timers.h"
 
 /* Freescale includes. */
@@ -28,11 +27,18 @@
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
+/*
+ * These functions are used to keep track of task info.
+ */
 extern void ConfigureRunTimeStatsTimer();
-extern void GPT2_IRQHandler();
 extern void TimerReset();
-extern void TimerPrint();
+extern void TimerLog(const char* name);
+extern void QueueInit();
+extern void vApplicationIdleHook();
 
+/*
+ * These are prototypes for tasks.
+ */
 static void hello_task(void *pvParameters);
 
 /*
@@ -67,6 +73,7 @@ int main(void)
     }
 
     /* Start the timer. */
+    QueueInit();
     ConfigureRunTimeStatsTimer();
 
     vTaskStartScheduler();
@@ -84,8 +91,8 @@ static void hello_task(void *pvParameters)
     	TimerReset();
 
     	/* Do stuff */
-        vTaskDelay(50 / portTICK_PERIOD_MS);
+        vTaskDelay(25 / portTICK_PERIOD_MS);
 
-        TimerPrint("hello_task");
+        TimerLog("hello_task");
     }
 }
