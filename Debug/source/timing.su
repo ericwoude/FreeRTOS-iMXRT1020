@@ -1,0 +1,11 @@
+core_cm7.h:1902:22:__NVIC_EnableIRQ	16	static
+fsl_common.h:460:28:EnableIRQ	16	static
+fsl_gpt.h:217:20:GPT_SetClockDivider	16	static
+fsl_gpt.h:270:20:GPT_StartTimer	16	static
+fsl_gpt.h:394:20:GPT_SetOutputCompareValue	24	static
+fsl_gpt.h:442:20:GPT_EnableInterrupts	16	static
+fsl_gpt.h:496:20:GPT_ClearStatusFlags	16	static
+timing.c:46:6:ConfigureRunTimeStatsTimer	48	static
+timing.c:81:6:GPT2_IRQHandler	8	static
+timing.c:93:6:TimerReset	4	static
+timing.c:101:6:TimerPrint	32	static

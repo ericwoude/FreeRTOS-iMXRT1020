@@ -45,7 +45,7 @@ Archive member included to satisfy reference by file (symbol)
 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_do_fflush.o)
                               /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fflush.o) (_do_fflush)
 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_64.o)
-                              ./source/freertos_main.o (__aeabi_uldivmod)
+                              ./source/timing.o (__aeabi_uldivmod)
 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_idiv0.o)
                               /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_64.o) (__aeabi_idiv0)
 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(memcpy.o)
@@ -501,6 +501,83 @@ Discarded input sections
  .data          0x0000000000000000        0x0 ./source/semihost_hardfault.o
  .bss           0x0000000000000000        0x0 ./source/semihost_hardfault.o
  .debug_macro   0x0000000000000000      0xaf6 ./source/semihost_hardfault.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .group         0x0000000000000000        0xc ./source/timing.o
+ .text          0x0000000000000000        0x0 ./source/timing.o
+ .data          0x0000000000000000        0x0 ./source/timing.o
+ .bss           0x0000000000000000        0x0 ./source/timing.o
+ .debug_macro   0x0000000000000000      0xaf6 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x10 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x12e ./source/timing.o
+ .debug_macro   0x0000000000000000       0x16 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x5b3 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x198 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x15a ./source/timing.o
+ .debug_macro   0x0000000000000000       0xe4 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x1c ./source/timing.o
+ .debug_macro   0x0000000000000000       0x26 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x399 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x10 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x4d ./source/timing.o
+ .debug_macro   0x0000000000000000       0x1c ./source/timing.o
+ .debug_macro   0x0000000000000000       0x22 ./source/timing.o
+ .debug_macro   0x0000000000000000       0xd8 ./source/timing.o
+ .debug_macro   0x0000000000000000     0x1305 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x11f ./source/timing.o
+ .debug_macro   0x0000000000000000       0x20 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x1c ./source/timing.o
+ .debug_macro   0x0000000000000000    0x1ffc2 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x678 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x16 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x22 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x1c ./source/timing.o
+ .debug_macro   0x0000000000000000       0xd7 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x1fb ./source/timing.o
+ .debug_macro   0x0000000000000000       0x2e ./source/timing.o
+ .debug_macro   0x0000000000000000       0x28 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x32 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x16 ./source/timing.o
+ .debug_macro   0x0000000000000000       0xd2 ./source/timing.o
+ .debug_macro   0x0000000000000000       0x1c ./source/timing.o
+ .debug_macro   0x0000000000000000      0x10c ./source/timing.o
+ .debug_macro   0x0000000000000000       0x10 ./source/timing.o
+ .debug_macro   0x0000000000000000      0x23d ./source/timing.o
+ .debug_macro   0x0000000000000000       0x10 ./source/timing.o
  .group         0x0000000000000000        0xc ./drivers/fsl_clock.o
  .group         0x0000000000000000        0xc ./drivers/fsl_clock.o
  .group         0x0000000000000000        0xc ./drivers/fsl_clock.o
@@ -2196,6 +2273,7 @@ LOAD ./utilities/fsl_str.o
 LOAD ./startup/startup_mimxrt1021.o
 LOAD ./source/freertos_main.o
 LOAD ./source/semihost_hardfault.o
+LOAD ./source/timing.o
 LOAD ./drivers/fsl_clock.o
 LOAD ./drivers/fsl_common.o
 LOAD ./drivers/fsl_gpio.o
@@ -2470,25 +2548,28 @@ END GROUP
  .text.__assertion_failed
                 0x0000000060002408       0x18 ./utilities/fsl_assert.o
                 0x0000000060002408                __assertion_failed
- .text.__NVIC_EnableIRQ
-                0x0000000060002420       0x3c ./source/freertos_main.o
- .text.GPT_SetClockDivider
-                0x000000006000245c       0x40 ./source/freertos_main.o
- .text.GPT_SetOutputCompareValue
-                0x000000006000249c       0x34 ./source/freertos_main.o
- .text.main     0x00000000600024d0       0x50 ./source/freertos_main.o
-                0x00000000600024d0                main
+ .text.main     0x0000000060002420       0x50 ./source/freertos_main.o
+                0x0000000060002420                main
  .text.hello_task
-                0x0000000060002520       0x20 ./source/freertos_main.o
+                0x0000000060002470       0x20 ./source/freertos_main.o
+ .text.__NVIC_EnableIRQ
+                0x0000000060002490       0x3c ./source/timing.o
+ .text.GPT_SetClockDivider
+                0x00000000600024cc       0x40 ./source/timing.o
+ .text.GPT_SetOutputCompareValue
+                0x000000006000250c       0x34 ./source/timing.o
  .text.ConfigureRunTimeStatsTimer
-                0x0000000060002540       0xd0 ./source/freertos_main.o
+                0x0000000060002540       0xd0 ./source/timing.o
+                0x0000000060002540                ConfigureRunTimeStatsTimer
  .text.GPT2_IRQHandler
-                0x0000000060002610       0x28 ./source/freertos_main.o
+                0x0000000060002610       0x28 ./source/timing.o
                 0x0000000060002610                GPT2_IRQHandler
  .text.TimerReset
-                0x0000000060002638       0x18 ./source/freertos_main.o
+                0x0000000060002638       0x18 ./source/timing.o
+                0x0000000060002638                TimerReset
  .text.TimerPrint
-                0x0000000060002650       0x90 ./source/freertos_main.o
+                0x0000000060002650       0x90 ./source/timing.o
+                0x0000000060002650                TimerPrint
  .text.CLOCK_GetOscFreq
                 0x00000000600026e0       0x30 ./drivers/fsl_clock.o
  .text.CLOCK_GetPeriphClkFreq
@@ -3201,17 +3282,17 @@ END GROUP
  .text.PWM2_FAULT_IRQHandler
                 0x0000000060007410        0x8 ./startup/startup_mimxrt1021.o
                 0x0000000060007410                PWM2_FAULT_IRQHandler
- .text.EnableIRQ
-                0x0000000060007418       0x2c ./source/freertos_main.o
- .text.GPT_StartTimer
-                0x0000000060007444       0x20 ./source/freertos_main.o
- .text.GPT_EnableInterrupts
-                0x0000000060007464       0x22 ./source/freertos_main.o
- .text.GPT_ClearStatusFlags
-                0x0000000060007486       0x1e ./source/freertos_main.o
  .text.HardFault_Handler
-                0x00000000600074a4       0x2c ./source/semihost_hardfault.o
-                0x00000000600074a4                HardFault_Handler
+                0x0000000060007418       0x2c ./source/semihost_hardfault.o
+                0x0000000060007418                HardFault_Handler
+ .text.EnableIRQ
+                0x0000000060007444       0x2c ./source/timing.o
+ .text.GPT_StartTimer
+                0x0000000060007470       0x20 ./source/timing.o
+ .text.GPT_EnableInterrupts
+                0x0000000060007490       0x22 ./source/timing.o
+ .text.GPT_ClearStatusFlags
+                0x00000000600074b2       0x1e ./source/timing.o
  .text.CLOCK_GetRtcFreq
                 0x00000000600074d0       0x12 ./drivers/fsl_clock.o
  .text.CLOCK_IsPllBypassed
@@ -3367,20 +3448,20 @@ END GROUP
  *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*) SORT_BY_ALIGNMENT(.constdata) SORT_BY_ALIGNMENT(.constdata.*))
  .rodata.__assertion_failed.str1.4
                 0x0000000060008574       0x14 ./utilities/fsl_assert.o
- .rodata.GPT_SetClockDivider.str1.4
-                0x0000000060008588       0x96 ./source/freertos_main.o
- *fill*         0x000000006000861e        0x2 ff
- .rodata.GPT_SetOutputCompareValue.str1.4
-                0x0000000060008620       0x97 ./source/freertos_main.o
- *fill*         0x00000000600086b7        0x1 ff
  .rodata.main.str1.4
-                0x00000000600086b8       0x25 ./source/freertos_main.o
- *fill*         0x00000000600086dd        0x3 ff
+                0x0000000060008588       0x25 ./source/freertos_main.o
+ *fill*         0x00000000600085ad        0x3 ff
  .rodata.hello_task.str1.4
-                0x00000000600086e0        0xb ./source/freertos_main.o
+                0x00000000600085b0        0xb ./source/freertos_main.o
+ *fill*         0x00000000600085bb        0x1 ff
+ .rodata.GPT_SetClockDivider.str1.4
+                0x00000000600085bc       0x96 ./source/timing.o
+ *fill*         0x0000000060008652        0x2 ff
+ .rodata.GPT_SetOutputCompareValue.str1.4
+                0x0000000060008654       0x97 ./source/timing.o
  *fill*         0x00000000600086eb        0x1 ff
  .rodata.TimerPrint.str1.4
-                0x00000000600086ec        0x7 ./source/freertos_main.o
+                0x00000000600086ec        0x7 ./source/timing.o
  *fill*         0x00000000600086f3        0x1 ff
  .rodata.CLOCK_InitExternalClk.str1.4
                 0x00000000600086f4       0x22 ./drivers/fsl_clock.o
@@ -3610,7 +3691,8 @@ END GROUP
  *(SORT_BY_ALIGNMENT(NonCacheable))
  *(SORT_BY_ALIGNMENT(.bss*))
  .bss.RunTimeCounter
-                0x0000000020000008        0x4 ./source/freertos_main.o
+                0x0000000020000008        0x4 ./source/timing.o
+                0x0000000020000008                RunTimeCounter
  .bss.g_xtalFreq
                 0x000000002000000c        0x4 ./drivers/fsl_clock.o
                 0x000000002000000c                g_xtalFreq
@@ -3788,49 +3870,51 @@ END GROUP
                 0x0000000000006adc                _image_size = (_image_end - _image_start)
 OUTPUT(rt1020_freertos_hello_scheduler.axf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x109a2
+.debug_info     0x0000000000000000    0x10d45
  .debug_info    0x0000000000000000      0x7e9 ./xip/evkmimxrt1020_flexspi_nor_config.o
  .debug_info    0x00000000000007e9      0x5d7 ./xip/fsl_flexspi_nor_boot.o
  .debug_info    0x0000000000000dc0      0x260 ./utilities/fsl_assert.o
  .debug_info    0x0000000000001020      0xcb5 ./startup/startup_mimxrt1021.o
- .debug_info    0x0000000000001cd5     0x1052 ./source/freertos_main.o
- .debug_info    0x0000000000002d27       0x3c ./source/semihost_hardfault.o
- .debug_info    0x0000000000002d63     0x1b12 ./drivers/fsl_clock.o
- .debug_info    0x0000000000004875      0xc2f ./drivers/fsl_gpt.o
- .debug_info    0x00000000000054a4     0x20f3 ./drivers/fsl_lpuart.o
- .debug_info    0x0000000000007597      0xc9e ./device/system_MIMXRT1021.o
- .debug_info    0x0000000000008235     0x135f ./board/board.o
- .debug_info    0x0000000000009594     0x16ac ./board/clock_config.o
- .debug_info    0x000000000000ac40      0x79f ./board/pin_mux.o
- .debug_info    0x000000000000b3df      0x424 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
- .debug_info    0x000000000000b803      0x589 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
- .debug_info    0x000000000000bd8c      0x302 ./amazon-freertos/freertos_kernel/list.o
- .debug_info    0x000000000000c08e     0x1863 ./amazon-freertos/freertos_kernel/queue.o
- .debug_info    0x000000000000d8f1     0x21b7 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_info    0x000000000000faa8      0xefa ./amazon-freertos/freertos_kernel/timers.o
+ .debug_info    0x0000000000001cd5      0x3eb ./source/freertos_main.o
+ .debug_info    0x00000000000020c0       0x3c ./source/semihost_hardfault.o
+ .debug_info    0x00000000000020fc     0x100a ./source/timing.o
+ .debug_info    0x0000000000003106     0x1b12 ./drivers/fsl_clock.o
+ .debug_info    0x0000000000004c18      0xc2f ./drivers/fsl_gpt.o
+ .debug_info    0x0000000000005847     0x20f3 ./drivers/fsl_lpuart.o
+ .debug_info    0x000000000000793a      0xc9e ./device/system_MIMXRT1021.o
+ .debug_info    0x00000000000085d8     0x135f ./board/board.o
+ .debug_info    0x0000000000009937     0x16ac ./board/clock_config.o
+ .debug_info    0x000000000000afe3      0x79f ./board/pin_mux.o
+ .debug_info    0x000000000000b782      0x424 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_info    0x000000000000bba6      0x589 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_info    0x000000000000c12f      0x302 ./amazon-freertos/freertos_kernel/list.o
+ .debug_info    0x000000000000c431     0x1863 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_info    0x000000000000dc94     0x21b7 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_info    0x000000000000fe4b      0xefa ./amazon-freertos/freertos_kernel/timers.o
 
-.debug_abbrev   0x0000000000000000     0x27a3
+.debug_abbrev   0x0000000000000000     0x28e9
  .debug_abbrev  0x0000000000000000      0x14c ./xip/evkmimxrt1020_flexspi_nor_config.o
  .debug_abbrev  0x000000000000014c      0x13f ./xip/fsl_flexspi_nor_boot.o
  .debug_abbrev  0x000000000000028b       0xe9 ./utilities/fsl_assert.o
  .debug_abbrev  0x0000000000000374      0x147 ./startup/startup_mimxrt1021.o
- .debug_abbrev  0x00000000000004bb      0x2bd ./source/freertos_main.o
- .debug_abbrev  0x0000000000000778       0x31 ./source/semihost_hardfault.o
- .debug_abbrev  0x00000000000007a9      0x38b ./drivers/fsl_clock.o
- .debug_abbrev  0x0000000000000b34      0x219 ./drivers/fsl_gpt.o
- .debug_abbrev  0x0000000000000d4d      0x364 ./drivers/fsl_lpuart.o
- .debug_abbrev  0x00000000000010b1      0x1c7 ./device/system_MIMXRT1021.o
- .debug_abbrev  0x0000000000001278      0x357 ./board/board.o
- .debug_abbrev  0x00000000000015cf      0x218 ./board/clock_config.o
- .debug_abbrev  0x00000000000017e7      0x188 ./board/pin_mux.o
- .debug_abbrev  0x000000000000196f      0x212 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
- .debug_abbrev  0x0000000000001b81      0x262 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
- .debug_abbrev  0x0000000000001de3      0x12d ./amazon-freertos/freertos_kernel/list.o
- .debug_abbrev  0x0000000000001f10      0x2d9 ./amazon-freertos/freertos_kernel/queue.o
- .debug_abbrev  0x00000000000021e9      0x32b ./amazon-freertos/freertos_kernel/tasks.o
- .debug_abbrev  0x0000000000002514      0x28f ./amazon-freertos/freertos_kernel/timers.o
+ .debug_abbrev  0x00000000000004bb      0x149 ./source/freertos_main.o
+ .debug_abbrev  0x0000000000000604       0x31 ./source/semihost_hardfault.o
+ .debug_abbrev  0x0000000000000635      0x2ba ./source/timing.o
+ .debug_abbrev  0x00000000000008ef      0x38b ./drivers/fsl_clock.o
+ .debug_abbrev  0x0000000000000c7a      0x219 ./drivers/fsl_gpt.o
+ .debug_abbrev  0x0000000000000e93      0x364 ./drivers/fsl_lpuart.o
+ .debug_abbrev  0x00000000000011f7      0x1c7 ./device/system_MIMXRT1021.o
+ .debug_abbrev  0x00000000000013be      0x357 ./board/board.o
+ .debug_abbrev  0x0000000000001715      0x218 ./board/clock_config.o
+ .debug_abbrev  0x000000000000192d      0x188 ./board/pin_mux.o
+ .debug_abbrev  0x0000000000001ab5      0x212 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_abbrev  0x0000000000001cc7      0x262 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_abbrev  0x0000000000001f29      0x12d ./amazon-freertos/freertos_kernel/list.o
+ .debug_abbrev  0x0000000000002056      0x2d9 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_abbrev  0x000000000000232f      0x32b ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_abbrev  0x000000000000265a      0x28f ./amazon-freertos/freertos_kernel/timers.o
 
-.debug_aranges  0x0000000000000000      0xf30
+.debug_aranges  0x0000000000000000      0xf48
  .debug_aranges
                 0x0000000000000000       0x18 ./xip/evkmimxrt1020_flexspi_nor_config.o
  .debug_aranges
@@ -3840,37 +3924,39 @@ OUTPUT(rt1020_freertos_hello_scheduler.axf elf32-littlearm)
  .debug_aranges
                 0x0000000000000050      0x4d0 ./startup/startup_mimxrt1021.o
  .debug_aranges
-                0x0000000000000520       0x80 ./source/freertos_main.o
+                0x0000000000000520       0x28 ./source/freertos_main.o
  .debug_aranges
-                0x00000000000005a0       0x20 ./source/semihost_hardfault.o
+                0x0000000000000548       0x20 ./source/semihost_hardfault.o
  .debug_aranges
-                0x00000000000005c0      0x128 ./drivers/fsl_clock.o
+                0x0000000000000568       0x70 ./source/timing.o
  .debug_aranges
-                0x00000000000006e8       0x68 ./drivers/fsl_gpt.o
+                0x00000000000005d8      0x128 ./drivers/fsl_clock.o
  .debug_aranges
-                0x0000000000000750      0x160 ./drivers/fsl_lpuart.o
+                0x0000000000000700       0x68 ./drivers/fsl_gpt.o
  .debug_aranges
-                0x00000000000008b0       0x30 ./device/system_MIMXRT1021.o
+                0x0000000000000768      0x160 ./drivers/fsl_lpuart.o
  .debug_aranges
-                0x00000000000008e0       0x78 ./board/board.o
+                0x00000000000008c8       0x30 ./device/system_MIMXRT1021.o
  .debug_aranges
-                0x0000000000000958       0x78 ./board/clock_config.o
+                0x00000000000008f8       0x78 ./board/board.o
  .debug_aranges
-                0x00000000000009d0       0x48 ./board/pin_mux.o
+                0x0000000000000970       0x78 ./board/clock_config.o
  .debug_aranges
-                0x0000000000000a18       0x50 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+                0x00000000000009e8       0x48 ./board/pin_mux.o
  .debug_aranges
-                0x0000000000000a68       0x80 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+                0x0000000000000a30       0x50 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
  .debug_aranges
-                0x0000000000000ae8       0x40 ./amazon-freertos/freertos_kernel/list.o
+                0x0000000000000a80       0x80 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
  .debug_aranges
-                0x0000000000000b28      0x130 ./amazon-freertos/freertos_kernel/queue.o
+                0x0000000000000b00       0x40 ./amazon-freertos/freertos_kernel/list.o
  .debug_aranges
-                0x0000000000000c58      0x1f8 ./amazon-freertos/freertos_kernel/tasks.o
+                0x0000000000000b40      0x130 ./amazon-freertos/freertos_kernel/queue.o
  .debug_aranges
-                0x0000000000000e50       0xe0 ./amazon-freertos/freertos_kernel/timers.o
+                0x0000000000000c70      0x1f8 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_aranges
+                0x0000000000000e68       0xe0 ./amazon-freertos/freertos_kernel/timers.o
 
-.debug_macro    0x0000000000000000    0x268dd
+.debug_macro    0x0000000000000000    0x26abf
  .debug_macro   0x0000000000000000      0x118 ./xip/evkmimxrt1020_flexspi_nor_config.o
  .debug_macro   0x0000000000000118      0xaf6 ./xip/evkmimxrt1020_flexspi_nor_config.o
  .debug_macro   0x0000000000000c0e       0x10 ./xip/evkmimxrt1020_flexspi_nor_config.o
@@ -3913,52 +3999,54 @@ OUTPUT(rt1020_freertos_hello_scheduler.axf elf32-littlearm)
  .debug_macro   0x0000000000024300       0xd2 ./utilities/fsl_assert.o
  .debug_macro   0x00000000000243d2       0x1c ./utilities/fsl_assert.o
  .debug_macro   0x00000000000243ee       0x29 ./startup/startup_mimxrt1021.o
- .debug_macro   0x0000000000024417      0x228 ./source/freertos_main.o
- .debug_macro   0x000000000002463f       0x16 ./source/freertos_main.o
- .debug_macro   0x0000000000024655       0x97 ./source/freertos_main.o
- .debug_macro   0x00000000000246ec       0x1c ./source/freertos_main.o
- .debug_macro   0x0000000000024708      0x10c ./source/freertos_main.o
- .debug_macro   0x0000000000024814       0x10 ./source/freertos_main.o
- .debug_macro   0x0000000000024824       0x11 ./source/semihost_hardfault.o
- .debug_macro   0x0000000000024835      0x103 ./drivers/fsl_clock.o
- .debug_macro   0x0000000000024938      0x113 ./drivers/fsl_gpt.o
- .debug_macro   0x0000000000024a4b      0x113 ./drivers/fsl_lpuart.o
- .debug_macro   0x0000000000024b5e       0xa7 ./device/system_MIMXRT1021.o
- .debug_macro   0x0000000000024c05      0x1db ./board/board.o
- .debug_macro   0x0000000000024de0     0x11de ./board/board.o
- .debug_macro   0x0000000000025fbe      0x115 ./board/clock_config.o
- .debug_macro   0x00000000000260d3      0x110 ./board/pin_mux.o
- .debug_macro   0x00000000000261e3       0xdf ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
- .debug_macro   0x00000000000262c2      0x179 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
- .debug_macro   0x000000000002643b       0xb8 ./amazon-freertos/freertos_kernel/list.o
- .debug_macro   0x00000000000264f3      0x125 ./amazon-freertos/freertos_kernel/queue.o
- .debug_macro   0x0000000000026618      0x192 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_macro   0x00000000000267aa       0x10 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_macro   0x00000000000267ba       0x16 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_macro   0x00000000000267d0      0x10d ./amazon-freertos/freertos_kernel/timers.o
+ .debug_macro   0x0000000000024417      0x21c ./source/freertos_main.o
+ .debug_macro   0x0000000000024633       0x16 ./source/freertos_main.o
+ .debug_macro   0x0000000000024649       0x97 ./source/freertos_main.o
+ .debug_macro   0x00000000000246e0       0x1c ./source/freertos_main.o
+ .debug_macro   0x00000000000246fc      0x10c ./source/freertos_main.o
+ .debug_macro   0x0000000000024808       0x10 ./source/freertos_main.o
+ .debug_macro   0x0000000000024818       0x11 ./source/semihost_hardfault.o
+ .debug_macro   0x0000000000024829      0x1ee ./source/timing.o
+ .debug_macro   0x0000000000024a17      0x103 ./drivers/fsl_clock.o
+ .debug_macro   0x0000000000024b1a      0x113 ./drivers/fsl_gpt.o
+ .debug_macro   0x0000000000024c2d      0x113 ./drivers/fsl_lpuart.o
+ .debug_macro   0x0000000000024d40       0xa7 ./device/system_MIMXRT1021.o
+ .debug_macro   0x0000000000024de7      0x1db ./board/board.o
+ .debug_macro   0x0000000000024fc2     0x11de ./board/board.o
+ .debug_macro   0x00000000000261a0      0x115 ./board/clock_config.o
+ .debug_macro   0x00000000000262b5      0x110 ./board/pin_mux.o
+ .debug_macro   0x00000000000263c5       0xdf ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_macro   0x00000000000264a4      0x179 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_macro   0x000000000002661d       0xb8 ./amazon-freertos/freertos_kernel/list.o
+ .debug_macro   0x00000000000266d5      0x125 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_macro   0x00000000000267fa      0x192 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_macro   0x000000000002698c       0x10 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_macro   0x000000000002699c       0x16 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_macro   0x00000000000269b2      0x10d ./amazon-freertos/freertos_kernel/timers.o
 
-.debug_line     0x0000000000000000     0xae7a
+.debug_line     0x0000000000000000     0xb621
  .debug_line    0x0000000000000000      0x3c2 ./xip/evkmimxrt1020_flexspi_nor_config.o
  .debug_line    0x00000000000003c2      0x433 ./xip/fsl_flexspi_nor_boot.o
  .debug_line    0x00000000000007f5      0x6c9 ./utilities/fsl_assert.o
  .debug_line    0x0000000000000ebe      0xe4d ./startup/startup_mimxrt1021.o
- .debug_line    0x0000000000001d0b      0x9c8 ./source/freertos_main.o
- .debug_line    0x00000000000026d3       0x5a ./source/semihost_hardfault.o
- .debug_line    0x000000000000272d      0xc21 ./drivers/fsl_clock.o
- .debug_line    0x000000000000334e      0x5ba ./drivers/fsl_gpt.o
- .debug_line    0x0000000000003908     0x11f9 ./drivers/fsl_lpuart.o
- .debug_line    0x0000000000004b01      0x4ea ./device/system_MIMXRT1021.o
- .debug_line    0x0000000000004feb      0xb44 ./board/board.o
- .debug_line    0x0000000000005b2f      0x6f5 ./board/clock_config.o
- .debug_line    0x0000000000006224      0x48c ./board/pin_mux.o
- .debug_line    0x00000000000066b0      0x666 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
- .debug_line    0x0000000000006d16      0x6c2 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
- .debug_line    0x00000000000073d8      0x4a3 ./amazon-freertos/freertos_kernel/list.o
- .debug_line    0x000000000000787b     0x1274 ./amazon-freertos/freertos_kernel/queue.o
- .debug_line    0x0000000000008aef     0x1942 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_line    0x000000000000a431      0xa49 ./amazon-freertos/freertos_kernel/timers.o
+ .debug_line    0x0000000000001d0b      0x83a ./source/freertos_main.o
+ .debug_line    0x0000000000002545       0x5a ./source/semihost_hardfault.o
+ .debug_line    0x000000000000259f      0x935 ./source/timing.o
+ .debug_line    0x0000000000002ed4      0xc21 ./drivers/fsl_clock.o
+ .debug_line    0x0000000000003af5      0x5ba ./drivers/fsl_gpt.o
+ .debug_line    0x00000000000040af     0x11f9 ./drivers/fsl_lpuart.o
+ .debug_line    0x00000000000052a8      0x4ea ./device/system_MIMXRT1021.o
+ .debug_line    0x0000000000005792      0xb44 ./board/board.o
+ .debug_line    0x00000000000062d6      0x6f5 ./board/clock_config.o
+ .debug_line    0x00000000000069cb      0x48c ./board/pin_mux.o
+ .debug_line    0x0000000000006e57      0x666 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_line    0x00000000000074bd      0x6c2 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_line    0x0000000000007b7f      0x4a3 ./amazon-freertos/freertos_kernel/list.o
+ .debug_line    0x0000000000008022     0x1274 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_line    0x0000000000009296     0x1942 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_line    0x000000000000abd8      0xa49 ./amazon-freertos/freertos_kernel/timers.o
 
-.debug_str      0x0000000000000000   0x1327a8
+.debug_str      0x0000000000000000   0x1327bb
  .debug_str     0x0000000000000000   0x1179a0 ./xip/evkmimxrt1020_flexspi_nor_config.o
                                      0x117a49 (size before relaxing)
  .debug_str     0x00000000001179a0     0x1f49 ./xip/fsl_flexspi_nor_boot.o
@@ -3967,35 +4055,37 @@ OUTPUT(rt1020_freertos_hello_scheduler.axf elf32-littlearm)
                                      0x119ade (size before relaxing)
  .debug_str     0x000000000011ce5e      0xca3 ./startup/startup_mimxrt1021.o
                                        0x3c86 (size before relaxing)
- .debug_str     0x000000000011db01     0x2d0a ./source/freertos_main.o
-                                     0x11ebbe (size before relaxing)
- .debug_str     0x000000000012080b       0x1f ./source/semihost_hardfault.o
+ .debug_str     0x000000000011db01     0x1da5 ./source/freertos_main.o
+                                     0x11d3cd (size before relaxing)
+ .debug_str     0x000000000011f8a6       0x1f ./source/semihost_hardfault.o
                                        0x2f53 (size before relaxing)
- .debug_str     0x000000000012082a      0xbc7 ./drivers/fsl_clock.o
+ .debug_str     0x000000000011f8c5      0xf78 ./source/timing.o
+                                     0x11ce87 (size before relaxing)
+ .debug_str     0x000000000012083d      0xbc7 ./drivers/fsl_clock.o
                                      0x117c42 (size before relaxing)
- .debug_str     0x00000000001213f1      0x6a5 ./drivers/fsl_gpt.o
+ .debug_str     0x0000000000121404      0x6a5 ./drivers/fsl_gpt.o
                                      0x117652 (size before relaxing)
- .debug_str     0x0000000000121a96     0x10c9 ./drivers/fsl_lpuart.o
+ .debug_str     0x0000000000121aa9     0x10c9 ./drivers/fsl_lpuart.o
                                      0x118eee (size before relaxing)
- .debug_str     0x0000000000122b5f      0x1fe ./device/system_MIMXRT1021.o
+ .debug_str     0x0000000000122b72      0x1fe ./device/system_MIMXRT1021.o
                                      0x115286 (size before relaxing)
- .debug_str     0x0000000000122d5d     0xc686 ./board/board.o
+ .debug_str     0x0000000000122d70     0xc686 ./board/board.o
                                      0x12818e (size before relaxing)
- .debug_str     0x000000000012f3e3      0x3d7 ./board/clock_config.o
+ .debug_str     0x000000000012f3f6      0x3d7 ./board/clock_config.o
                                      0x12486c (size before relaxing)
- .debug_str     0x000000000012f7ba       0x53 ./board/pin_mux.o
+ .debug_str     0x000000000012f7cd       0x53 ./board/pin_mux.o
                                      0x122dd4 (size before relaxing)
- .debug_str     0x000000000012f80d      0x2c5 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_str     0x000000000012f820      0x2c5 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
                                        0x8567 (size before relaxing)
- .debug_str     0x000000000012fad2      0x84e ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_str     0x000000000012fae5      0x84e ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
                                        0x8af9 (size before relaxing)
- .debug_str     0x0000000000130320      0x13c ./amazon-freertos/freertos_kernel/list.o
+ .debug_str     0x0000000000130333      0x13c ./amazon-freertos/freertos_kernel/list.o
                                        0x7d79 (size before relaxing)
- .debug_str     0x000000000013045c      0x8a7 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_str     0x000000000013046f      0x8a7 ./amazon-freertos/freertos_kernel/queue.o
                                        0x940d (size before relaxing)
- .debug_str     0x0000000000130d03     0x14ab ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_str     0x0000000000130d16     0x14ab ./amazon-freertos/freertos_kernel/tasks.o
                                        0xa1c4 (size before relaxing)
- .debug_str     0x00000000001321ae      0x5fa ./amazon-freertos/freertos_kernel/timers.o
+ .debug_str     0x00000000001321c1      0x5fa ./amazon-freertos/freertos_kernel/timers.o
                                        0x9931 (size before relaxing)
 
 .comment        0x0000000000000000       0x76
@@ -4006,6 +4096,7 @@ OUTPUT(rt1020_freertos_hello_scheduler.axf elf32-littlearm)
  .comment       0x0000000000000076       0x77 ./startup/startup_mimxrt1021.o
  .comment       0x0000000000000076       0x77 ./source/freertos_main.o
  .comment       0x0000000000000076       0x77 ./source/semihost_hardfault.o
+ .comment       0x0000000000000076       0x77 ./source/timing.o
  .comment       0x0000000000000076       0x77 ./drivers/fsl_clock.o
  .comment       0x0000000000000076       0x77 ./drivers/fsl_gpt.o
  .comment       0x0000000000000076       0x77 ./drivers/fsl_lpuart.o
@@ -4058,137 +4149,141 @@ OUTPUT(rt1020_freertos_hello_scheduler.axf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000104       0x32 ./source/semihost_hardfault.o
  .ARM.attributes
-                0x0000000000000136       0x32 ./drivers/fsl_clock.o
+                0x0000000000000136       0x32 ./source/timing.o
  .ARM.attributes
-                0x0000000000000168       0x32 ./drivers/fsl_gpt.o
+                0x0000000000000168       0x32 ./drivers/fsl_clock.o
  .ARM.attributes
-                0x000000000000019a       0x32 ./drivers/fsl_lpuart.o
+                0x000000000000019a       0x32 ./drivers/fsl_gpt.o
  .ARM.attributes
-                0x00000000000001cc       0x32 ./device/system_MIMXRT1021.o
+                0x00000000000001cc       0x32 ./drivers/fsl_lpuart.o
  .ARM.attributes
-                0x00000000000001fe       0x32 ./board/board.o
+                0x00000000000001fe       0x32 ./device/system_MIMXRT1021.o
  .ARM.attributes
-                0x0000000000000230       0x32 ./board/clock_config.o
+                0x0000000000000230       0x32 ./board/board.o
  .ARM.attributes
-                0x0000000000000262       0x32 ./board/pin_mux.o
+                0x0000000000000262       0x32 ./board/clock_config.o
  .ARM.attributes
-                0x0000000000000294       0x32 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+                0x0000000000000294       0x32 ./board/pin_mux.o
  .ARM.attributes
-                0x00000000000002c6       0x32 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+                0x00000000000002c6       0x32 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
  .ARM.attributes
-                0x00000000000002f8       0x32 ./amazon-freertos/freertos_kernel/list.o
+                0x00000000000002f8       0x32 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
  .ARM.attributes
-                0x000000000000032a       0x32 ./amazon-freertos/freertos_kernel/queue.o
+                0x000000000000032a       0x32 ./amazon-freertos/freertos_kernel/list.o
  .ARM.attributes
-                0x000000000000035c       0x32 ./amazon-freertos/freertos_kernel/tasks.o
+                0x000000000000035c       0x32 ./amazon-freertos/freertos_kernel/queue.o
  .ARM.attributes
-                0x000000000000038e       0x32 ./amazon-freertos/freertos_kernel/timers.o
+                0x000000000000038e       0x32 ./amazon-freertos/freertos_kernel/tasks.o
  .ARM.attributes
-                0x00000000000003c0       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(_cr__main.o)
+                0x00000000000003c0       0x32 ./amazon-freertos/freertos_kernel/timers.o
  .ARM.attributes
-                0x00000000000003f2       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(memcpy.o)
+                0x00000000000003f2       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(_cr__main.o)
  .ARM.attributes
-                0x0000000000000424       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(memset.o)
+                0x0000000000000424       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(memcpy.o)
  .ARM.attributes
-                0x0000000000000456       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(alloc.o)
+                0x0000000000000456       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(memset.o)
  .ARM.attributes
-                0x0000000000000488       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(initio.o)
+                0x0000000000000488       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(alloc.o)
  .ARM.attributes
-                0x00000000000004ba       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(printf.o)
+                0x00000000000004ba       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(initio.o)
  .ARM.attributes
-                0x00000000000004ec       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(setvbuf.o)
+                0x00000000000004ec       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(printf.o)
  .ARM.attributes
-                0x000000000000051e       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(strlen.o)
+                0x000000000000051e       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(setvbuf.o)
  .ARM.attributes
-                0x0000000000000550       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(__init_alloc.o)
+                0x0000000000000550       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(strlen.o)
  .ARM.attributes
-                0x0000000000000582       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_cr_sbrk.o)
+                0x0000000000000582       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(__init_alloc.o)
  .ARM.attributes
-                0x00000000000005b4       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_deferredlazyseek.o)
+                0x00000000000005b4       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_cr_sbrk.o)
  .ARM.attributes
-                0x00000000000005e6       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_fdopen.o)
+                0x00000000000005e6       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_deferredlazyseek.o)
  .ARM.attributes
-                0x0000000000000618       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_fflush.o)
+                0x0000000000000618       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_fdopen.o)
  .ARM.attributes
-                0x000000000000064a       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_writebuf.o)
+                0x000000000000064a       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_fflush.o)
  .ARM.attributes
-                0x000000000000067c       0x37 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(errno.o)
+                0x000000000000067c       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_writebuf.o)
  .ARM.attributes
-                0x00000000000006b3       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fclose.o)
+                0x00000000000006ae       0x37 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(errno.o)
  .ARM.attributes
-                0x00000000000006e5       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fflush.o)
+                0x00000000000006e5       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fclose.o)
  .ARM.attributes
-                0x0000000000000717       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fseek.o)
+                0x0000000000000717       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fflush.o)
  .ARM.attributes
-                0x0000000000000749       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(ftell.o)
+                0x0000000000000749       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(fseek.o)
  .ARM.attributes
-                0x000000000000077b       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(remove.o)
+                0x000000000000077b       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(ftell.o)
  .ARM.attributes
-                0x00000000000007ad       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_cr_check_heap.o)
+                0x00000000000007ad       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(remove.o)
  .ARM.attributes
-                0x00000000000007df       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_do_fflush.o)
+                0x00000000000007df       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_cr_check_heap.o)
  .ARM.attributes
-                0x0000000000000811       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_64.o)
+                0x0000000000000811       0x32 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(_do_fflush.o)
  .ARM.attributes
-                0x000000000000082f       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_idiv0.o)
+                0x0000000000000843       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_64.o)
  .ARM.attributes
-                0x000000000000084d       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(memcpy.o)
+                0x0000000000000861       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_idiv0.o)
  .ARM.attributes
-                0x000000000000086b       0x37 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__ciob.o)
+                0x000000000000087f       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(memcpy.o)
  .ARM.attributes
-                0x00000000000008a2       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_appexit.o)
+                0x000000000000089d       0x37 /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__ciob.o)
  .ARM.attributes
-                0x00000000000008c0       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_close.o)
+                0x00000000000008d4       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_appexit.o)
  .ARM.attributes
-                0x00000000000008de       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_flen.o)
+                0x00000000000008f2       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_close.o)
  .ARM.attributes
-                0x00000000000008fc       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_istty.o)
+                0x0000000000000910       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_flen.o)
  .ARM.attributes
-                0x000000000000091a       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_remove.o)
+                0x000000000000092e       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_istty.o)
  .ARM.attributes
-                0x0000000000000938       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_seek.o)
+                0x000000000000094c       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_remove.o)
  .ARM.attributes
-                0x0000000000000956       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_tmpnam.o)
+                0x000000000000096a       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_seek.o)
  .ARM.attributes
-                0x0000000000000974       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_write.o)
+                0x0000000000000988       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_tmpnam.o)
+ .ARM.attributes
+                0x00000000000009a6       0x1e /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(__sys_write.o)
 
-.debug_ranges   0x0000000000000000      0xe08
+.debug_ranges   0x0000000000000000      0xe10
  .debug_ranges  0x0000000000000000       0x10 ./utilities/fsl_assert.o
  .debug_ranges  0x0000000000000010      0x4c0 ./startup/startup_mimxrt1021.o
- .debug_ranges  0x00000000000004d0       0x70 ./source/freertos_main.o
- .debug_ranges  0x0000000000000540       0x10 ./source/semihost_hardfault.o
- .debug_ranges  0x0000000000000550      0x118 ./drivers/fsl_clock.o
- .debug_ranges  0x0000000000000668       0x58 ./drivers/fsl_gpt.o
- .debug_ranges  0x00000000000006c0      0x150 ./drivers/fsl_lpuart.o
- .debug_ranges  0x0000000000000810       0x20 ./device/system_MIMXRT1021.o
- .debug_ranges  0x0000000000000830       0x80 ./board/board.o
- .debug_ranges  0x00000000000008b0       0x68 ./board/clock_config.o
- .debug_ranges  0x0000000000000918       0x38 ./board/pin_mux.o
- .debug_ranges  0x0000000000000950       0x40 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
- .debug_ranges  0x0000000000000990       0x70 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
- .debug_ranges  0x0000000000000a00       0x30 ./amazon-freertos/freertos_kernel/list.o
- .debug_ranges  0x0000000000000a30      0x120 ./amazon-freertos/freertos_kernel/queue.o
- .debug_ranges  0x0000000000000b50      0x1e8 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_ranges  0x0000000000000d38       0xd0 ./amazon-freertos/freertos_kernel/timers.o
+ .debug_ranges  0x00000000000004d0       0x18 ./source/freertos_main.o
+ .debug_ranges  0x00000000000004e8       0x10 ./source/semihost_hardfault.o
+ .debug_ranges  0x00000000000004f8       0x60 ./source/timing.o
+ .debug_ranges  0x0000000000000558      0x118 ./drivers/fsl_clock.o
+ .debug_ranges  0x0000000000000670       0x58 ./drivers/fsl_gpt.o
+ .debug_ranges  0x00000000000006c8      0x150 ./drivers/fsl_lpuart.o
+ .debug_ranges  0x0000000000000818       0x20 ./device/system_MIMXRT1021.o
+ .debug_ranges  0x0000000000000838       0x80 ./board/board.o
+ .debug_ranges  0x00000000000008b8       0x68 ./board/clock_config.o
+ .debug_ranges  0x0000000000000920       0x38 ./board/pin_mux.o
+ .debug_ranges  0x0000000000000958       0x40 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_ranges  0x0000000000000998       0x70 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_ranges  0x0000000000000a08       0x30 ./amazon-freertos/freertos_kernel/list.o
+ .debug_ranges  0x0000000000000a38      0x120 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_ranges  0x0000000000000b58      0x1e8 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_ranges  0x0000000000000d40       0xd0 ./amazon-freertos/freertos_kernel/timers.o
 
-.debug_frame    0x0000000000000000     0x366c
+.debug_frame    0x0000000000000000     0x367c
  .debug_frame   0x0000000000000000       0x30 ./utilities/fsl_assert.o
  .debug_frame   0x0000000000000030      0xe04 ./startup/startup_mimxrt1021.o
- .debug_frame   0x0000000000000e34      0x1f0 ./source/freertos_main.o
- .debug_frame   0x0000000000001024       0x20 ./source/semihost_hardfault.o
- .debug_frame   0x0000000000001044      0x4d4 ./drivers/fsl_clock.o
- .debug_frame   0x0000000000001518      0x180 ./drivers/fsl_gpt.o
- .debug_frame   0x0000000000001698      0x5bc ./drivers/fsl_lpuart.o
- .debug_frame   0x0000000000001c54       0x7c ./device/system_MIMXRT1021.o
- .debug_frame   0x0000000000001cd0      0x1e0 ./board/board.o
- .debug_frame   0x0000000000001eb0      0x1c8 ./board/clock_config.o
- .debug_frame   0x0000000000002078       0xe8 ./board/pin_mux.o
- .debug_frame   0x0000000000002160      0x108 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
- .debug_frame   0x0000000000002268      0x1a8 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
- .debug_frame   0x0000000000002410       0xd8 ./amazon-freertos/freertos_kernel/list.o
- .debug_frame   0x00000000000024e8      0x530 ./amazon-freertos/freertos_kernel/queue.o
- .debug_frame   0x0000000000002a18      0x8a4 ./amazon-freertos/freertos_kernel/tasks.o
- .debug_frame   0x00000000000032bc      0x3b0 ./amazon-freertos/freertos_kernel/timers.o
+ .debug_frame   0x0000000000000e34       0x50 ./source/freertos_main.o
+ .debug_frame   0x0000000000000e84       0x20 ./source/semihost_hardfault.o
+ .debug_frame   0x0000000000000ea4      0x1b0 ./source/timing.o
+ .debug_frame   0x0000000000001054      0x4d4 ./drivers/fsl_clock.o
+ .debug_frame   0x0000000000001528      0x180 ./drivers/fsl_gpt.o
+ .debug_frame   0x00000000000016a8      0x5bc ./drivers/fsl_lpuart.o
+ .debug_frame   0x0000000000001c64       0x7c ./device/system_MIMXRT1021.o
+ .debug_frame   0x0000000000001ce0      0x1e0 ./board/board.o
+ .debug_frame   0x0000000000001ec0      0x1c8 ./board/clock_config.o
+ .debug_frame   0x0000000000002088       0xe8 ./board/pin_mux.o
+ .debug_frame   0x0000000000002170      0x108 ./amazon-freertos/freertos_kernel/portable/MemMang/heap_4.o
+ .debug_frame   0x0000000000002278      0x1a8 ./amazon-freertos/freertos_kernel/portable/GCC/ARM_CM4F/port.o
+ .debug_frame   0x0000000000002420       0xd8 ./amazon-freertos/freertos_kernel/list.o
+ .debug_frame   0x00000000000024f8      0x530 ./amazon-freertos/freertos_kernel/queue.o
+ .debug_frame   0x0000000000002a28      0x8a4 ./amazon-freertos/freertos_kernel/tasks.o
+ .debug_frame   0x00000000000032cc      0x3b0 ./amazon-freertos/freertos_kernel/timers.o
 
 Cross Reference Table
 
@@ -4250,7 +4345,7 @@ CLOCK_EnableUsbhs0Clock                           ./drivers/fsl_clock.o
 CLOCK_EnableUsbhs0PhyPllClock                     ./drivers/fsl_clock.o
 CLOCK_GetAhbFreq                                  ./drivers/fsl_clock.o
 CLOCK_GetFreq                                     ./drivers/fsl_clock.o
-                                                  ./source/freertos_main.o
+                                                  ./source/timing.o
 CLOCK_GetIpgFreq                                  ./drivers/fsl_clock.o
 CLOCK_GetPerClkFreq                               ./drivers/fsl_clock.o
 CLOCK_GetPllFreq                                  ./drivers/fsl_clock.o
@@ -4281,6 +4376,8 @@ CTI0_ERROR_DriverIRQHandler                       ./startup/startup_mimxrt1021.o
 CTI0_ERROR_IRQHandler                             ./startup/startup_mimxrt1021.o
 CTI1_ERROR_DriverIRQHandler                       ./startup/startup_mimxrt1021.o
 CTI1_ERROR_IRQHandler                             ./startup/startup_mimxrt1021.o
+ConfigureRunTimeStatsTimer                        ./source/timing.o
+                                                  ./source/freertos_main.o
 DCDC_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
 DCDC_IRQHandler                                   ./startup/startup_mimxrt1021.o
 DCP_DriverIRQHandler                              ./startup/startup_mimxrt1021.o
@@ -4385,13 +4482,13 @@ GPR_IRQ_IRQHandler                                ./startup/startup_mimxrt1021.o
 GPT1_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
 GPT1_IRQHandler                                   ./startup/startup_mimxrt1021.o
 GPT2_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
-GPT2_IRQHandler                                   ./source/freertos_main.o
+GPT2_IRQHandler                                   ./source/timing.o
                                                   ./startup/startup_mimxrt1021.o
 GPT_Deinit                                        ./drivers/fsl_gpt.o
 GPT_GetDefaultConfig                              ./drivers/fsl_gpt.o
-                                                  ./source/freertos_main.o
+                                                  ./source/timing.o
 GPT_Init                                          ./drivers/fsl_gpt.o
-                                                  ./source/freertos_main.o
+                                                  ./source/timing.o
 HAL_UartDeinit                                    ./component/uart/lpuart_adapter.o
                                                   ./component/serial_manager/serial_port_uart.o
 HAL_UartEnterLowpower                             ./component/uart/lpuart_adapter.o
@@ -4564,6 +4661,7 @@ Reserved86_IRQHandler                             ./startup/startup_mimxrt1021.o
 Reserved87_DriverIRQHandler                       ./startup/startup_mimxrt1021.o
 Reserved87_IRQHandler                             ./startup/startup_mimxrt1021.o
 ResetISR                                          ./startup/startup_mimxrt1021.o
+RunTimeCounter                                    ./source/timing.o
 SAI1_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
 SAI1_IRQHandler                                   ./startup/startup_mimxrt1021.o
 SAI2_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
@@ -4634,6 +4732,10 @@ TMR2_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
 TMR2_IRQHandler                                   ./startup/startup_mimxrt1021.o
 TRNG_DriverIRQHandler                             ./startup/startup_mimxrt1021.o
 TRNG_IRQHandler                                   ./startup/startup_mimxrt1021.o
+TimerPrint                                        ./source/timing.o
+                                                  ./source/freertos_main.o
+TimerReset                                        ./source/timing.o
+                                                  ./source/freertos_main.o
 USB_OTG1_DriverIRQHandler                         ./startup/startup_mimxrt1021.o
 USB_OTG1_IRQHandler                               ./startup/startup_mimxrt1021.o
 USB_PHY_DriverIRQHandler                          ./startup/startup_mimxrt1021.o
@@ -4683,7 +4785,7 @@ __aeabi_memset8                                   /usr/local/mcuxpressoide-11.1.
 __aeabi_uldivmod                                  /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_64.o)
                                                   ./device/system_MIMXRT1021.o
                                                   ./drivers/fsl_common.o
-                                                  ./source/freertos_main.o
+                                                  ./source/timing.o
 __assertion_failed                                ./utilities/fsl_assert.o
                                                   ./board/pin_mux.o
                                                   ./board/clock_config.o
@@ -4696,7 +4798,7 @@ __assertion_failed                                ./utilities/fsl_assert.o
                                                   ./drivers/fsl_gpio.o
                                                   ./drivers/fsl_common.o
                                                   ./drivers/fsl_clock.o
-                                                  ./source/freertos_main.o
+                                                  ./source/timing.o
                                                   ./utilities/fsl_debug_console.o
 __base_NCACHE_REGION                              ./board/board.o
 __bhs_ldivmod1                                    /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/thumb/v7e-m+dp/hard/libcr_eabihelpers.a(division_64.o)
@@ -4756,6 +4858,7 @@ _init_alloc                                       /usr/local/mcuxpressoide-11.1.
 _initio                                           /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(initio.o)
                                                   /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_semihost_nf.a(_cr__main.o)
 _printf                                           /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(printf.o)
+                                                  ./source/timing.o
                                                   ./source/freertos_main.o
                                                   ./utilities/fsl_assert.o
 _printf_char                                      /usr/local/mcuxpressoide-11.1.1_3241/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.1.0.202001081728/tools/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libcr_c.a(printf.o)

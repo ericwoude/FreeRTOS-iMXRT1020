@@ -5,15 +5,18 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../source/freertos_main.c \
-../source/semihost_hardfault.c 
+../source/semihost_hardfault.c \
+../source/timing.c 
 
 OBJS += \
 ./source/freertos_main.o \
-./source/semihost_hardfault.o 
+./source/semihost_hardfault.o \
+./source/timing.o 
 
 C_DEPS += \
 ./source/freertos_main.d \
-./source/semihost_hardfault.d 
+./source/semihost_hardfault.d \
+./source/timing.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

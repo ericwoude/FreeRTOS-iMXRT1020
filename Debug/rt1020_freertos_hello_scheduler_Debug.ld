@@ -6,7 +6,7 @@
  * Generated linker script file for MIMXRT1021xxxxx
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.1.1 [Build 3241] [2020-03-02] on May 20, 2020 4:13:29 PM
+ * MCUXpresso IDE v11.1.1 [Build 3241] [2020-03-02] on May 20, 2020 4:29:04 PM
  */
 
 INCLUDE "rt1020_freertos_hello_scheduler_Debug_library.ld"
