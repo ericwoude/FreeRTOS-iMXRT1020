@@ -37,6 +37,7 @@ void TimerLog(const char* name);
 void TimerPrint();
 void QueueInit();
 void vApplicationIdleHook();
+void ComputationTime(unsigned long msec);
 
 /*******************************************************************************
  * Globals
@@ -163,7 +164,23 @@ void TimerPrint()
 	}
 }
 
+/*!
+ * @brief Will execute every FreeRTOS tick in idle state
+ */
 void vApplicationIdleHook()
 {
 	TimerPrint();
+}
+
+/*!
+ * @brief Simulates computation time without blocking task.
+ */
+void ComputationTime(unsigned long msec)
+{
+	TickType_t currentTick = xTaskGetTickCount();
+
+	while(xTaskGetTickCount() - currentTick < msec / portTICK_PERIOD_MS)
+	{
+	   ;
+	}
 }
