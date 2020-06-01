@@ -22,36 +22,27 @@
 
 
 /* Task priorities. */
-#define hello_task_PRIORITY (configMAX_PRIORITIES - 1)
+//#define taskA1_PRIORITY (configMAX_PRIORITIES - 1)
+//#define taskA2_PRIORITY (configMAX_PRIORITIES - 2)
+//#define taskA3_PRIORITY (configMAX_PRIORITIES - 3)
+
+#define taskA1_PRIORITY (configMAX_PRIORITIES - 2)
+#define taskA2_PRIORITY (configMAX_PRIORITIES - 3)
+#define taskA3_PRIORITY (configMAX_PRIORITIES - 1)
 
 /*******************************************************************************
  * Prototypes
  ******************************************************************************/
-/*
- * These functions are used to keep track of task info.
- */
 extern void ConfigureRunTimeStatsTimer();
-extern void TimerReset();
-extern void TimerLog(const char* name);
 extern void QueueInit();
 extern void vApplicationIdleHook();
-extern void ComputationTime(unsigned long msec);
 
 /*
  * These are prototypes for tasks.
  */
-static void task_1(void *pvParameters);
-static void task_2(void *pvParameters);
-static void task_3(void *pvParameters);
-
-/*
- * TODO:
- * Create a data structure info, which holds a task name and unsigned integer
- * Create a queue with n of these data structure pointers
- * Create an idle task hook, while idle start emptying the queue by sending this data to the host machine
- * Create a function that empties the queue if it is full, do a check in every TimerPrint() call
- */
-
+extern void vTaskA1(void *pvParameter);
+extern void vTaskA2(void *pvParameter);
+extern void vTaskA3(void *pvParameter);
 
 /*******************************************************************************
  * Code
@@ -67,7 +58,7 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
-    if (xTaskCreate(task_1, "task_1", configMINIMAL_STACK_SIZE + 100, NULL, hello_task_PRIORITY, NULL) !=
+    if (xTaskCreate(vTaskA1, "TaskA1", configMINIMAL_STACK_SIZE + 100, NULL, taskA1_PRIORITY, NULL) !=
         pdPASS)
     {
         PRINTF("Task creation failed!.\r\n");
@@ -75,87 +66,28 @@ int main(void)
             ;
     }
 
-    if (xTaskCreate(task_2, "task_2", configMINIMAL_STACK_SIZE + 100, NULL, hello_task_PRIORITY, NULL) !=
-        pdPASS)
-    {
-        PRINTF("Task creation failed!.\r\n");
-        while (1)
-            ;
-    }
-
-    if (xTaskCreate(task_3, "task_3", configMINIMAL_STACK_SIZE + 100, NULL, hello_task_PRIORITY, NULL) !=
-        pdPASS)
-    {
-        PRINTF("Task creation failed!.\r\n");
-        while (1)
-            ;
-    }
+//    if (xTaskCreate(vTaskA2, "TaskA2", configMINIMAL_STACK_SIZE + 100, NULL, taskA2_PRIORITY, NULL) !=
+//        pdPASS)
+//    {
+//        PRINTF("Task creation failed!.\r\n");
+//        while (1)
+//            ;
+//    }
+//
+//    if (xTaskCreate(vTaskA3, "TaskA3", configMINIMAL_STACK_SIZE + 100, NULL, taskA3_PRIORITY, NULL) !=
+//        pdPASS)
+//    {
+//        PRINTF("Task creation failed!.\r\n");
+//        while (1)
+//            ;
+//    }
 
     /* Start the timer. */
     QueueInit();
     ConfigureRunTimeStatsTimer();
 
     vTaskStartScheduler();
+
     for (;;)
         ;
-}
-
-/*!
- * @brief Task responsible for printing of "Task 1" message.
- */
-static void task_1(void *pvParameters)
-{
-	TickType_t xLastWakeTime;
-	const TickType_t xFrequency = 1000 / portTICK_PERIOD_MS;
-	xLastWakeTime = xTaskGetTickCount();
-	for (;;)
-	{
-		vTaskDelayUntil(&xLastWakeTime, xFrequency);
-		TimerReset();
-
-		/* Do stuff for 2000 ms */
-		ComputationTime(200);
-
-		TimerLog("Task 1");
-	}
-}
-
-/*!
- * @brief Task responsible for printing of "Task 2" message.
- */
-static void task_2(void *pvParameters)
-{
-	TickType_t xLastWakeTime;
-	const TickType_t xFrequency = 500 / portTICK_PERIOD_MS;
-	xLastWakeTime = xTaskGetTickCount();
-	for (;;)
-	{
-		vTaskDelayUntil(&xLastWakeTime, xFrequency);
-		TimerReset();
-
-		/* Do stuff for 50 ms */
-		ComputationTime(50);
-
-		TimerLog("Task 2");
-	}
-}
-
-/*!
- * @brief Task responsible for printing of "Task 3" message.
- */
-static void task_3(void *pvParameters)
-{
-	TickType_t xLastWakeTime;
-	const TickType_t xFrequency = 100 / portTICK_PERIOD_MS;
-	xLastWakeTime = xTaskGetTickCount();
-	for (;;)
-	{
-		vTaskDelayUntil(&xLastWakeTime, xFrequency);
-		TimerReset();
-
-		/* Do stuff for 5 ms */
-		ComputationTime(5);
-
-		TimerLog("Task 3");
-	}
 }

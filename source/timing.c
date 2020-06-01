@@ -32,8 +32,8 @@
  ******************************************************************************/
 void ConfigureRunTimeStatsTimer();
 void GPT2_IRQHandler();
-void TimerReset();
-void TimerLog(const char* name);
+unsigned long TimerCount();
+void TimerLog(const char* name, unsigned long absRunTimeCounter);
 void TimerPrint();
 void QueueInit();
 void vApplicationIdleHook();
@@ -93,7 +93,7 @@ void ConfigureRunTimeStatsTimer()
 	gptFreq /= 3;
 
 	/* By setting the tick period to 500us (2 kHz), the rate would
-	 * be 10x higher than the FreeRTOS tick, giving more accurate results. */
+	 * be 10x higher than the RTOS tick, giving more accurate results. */
 	gptFreq = USEC_TO_COUNT(gptTICK_RATE_US, gptFreq);
 	GPT_SetOutputCompareValue(GPT2, kGPT_OutputCompare_Channel1, gptFreq);
 
@@ -120,27 +120,27 @@ void GPT2_IRQHandler() {
 /*!
  * @brief Resets run time counter to 0.
  */
-void TimerReset()
+unsigned long TimerCount()
 {
-	RunTimeCounter = 0;
+	return RunTimeCounter;
 }
 
 /*!
  * @brief Logs the info of the task and sends it to a queue.
  */
-void TimerLog(const char* name)
+void TimerLog(const char* name, unsigned long absRunTimeCounter)
 {
 	task_info* info = malloc(sizeof(task_info));
 	if (info)
 	{
 		info->name = name;
-		info->time = COUNT_TO_MSEC(RunTimeCounter, gptTICK_RATE_HZ);
+		info->time = COUNT_TO_MSEC(absRunTimeCounter, gptTICK_RATE_HZ);
 
 		xQueueSend(xInfoQueue, (void *) &info, ( TickType_t ) 0);
 	}
 	else
 	{
-		PRINTF("Error creating task_info struct");
+		PRINTF("Error creating task_info structure");
 	}
 }
 
@@ -159,6 +159,7 @@ void TimerPrint()
 			if (xQueueReceive(xInfoQueue, &info, ( TickType_t ) 0 ) == pdPASS)
 			{
 				PRINTF("%s %u\n", info->name, info->time);
+//				free(info);
 			}
 		}
 	}
@@ -179,8 +180,9 @@ void ComputationTime(unsigned long msec)
 {
 	TickType_t currentTick = xTaskGetTickCount();
 
+	volatile unsigned int i = 0;
 	while(xTaskGetTickCount() - currentTick < msec / portTICK_PERIOD_MS)
 	{
-	   ;
+	   i++;
 	}
 }
