@@ -6,16 +6,19 @@
 C_SRCS += \
 ../source/freertos_main.c \
 ../source/semihost_hardfault.c \
+../source/tasksets.c \
 ../source/timing.c 
 
 OBJS += \
 ./source/freertos_main.o \
 ./source/semihost_hardfault.o \
+./source/tasksets.o \
 ./source/timing.o 
 
 C_DEPS += \
 ./source/freertos_main.d \
 ./source/semihost_hardfault.d \
+./source/tasksets.d \
 ./source/timing.d 
 
 

@@ -40,6 +40,10 @@
  * See http://www.freertos.org/a00110.html.
  *----------------------------------------------------------*/
 
+/* --- EDF ------------------------------------*/
+#define configUSE_EDF_SCHEDULING				1
+/* --------------------------------------------*/
+
 #define configUSE_PREEMPTION                    1
 #define configUSE_TICKLESS_IDLE                 0
 #define configCPU_CLOCK_HZ                      (SystemCoreClock)
@@ -96,6 +100,8 @@
 #define configTIMER_TASK_PRIORITY               (configMAX_PRIORITIES - 1)
 #define configTIMER_QUEUE_LENGTH                10
 #define configTIMER_TASK_STACK_DEPTH            (configMINIMAL_STACK_SIZE * 2)
+
+#define configUSE_APPLICATION_TASK_TAG			1
 
 /* Define to trap errors during development. */
 #define configASSERT(x) if(( x) == 0) {taskDISABLE_INTERRUPTS(); for (;;);}
@@ -155,5 +161,11 @@ standard names. */
 #define vPortSVCHandler SVC_Handler
 #define xPortPendSVHandler PendSV_Handler
 #define xPortSysTickHandler SysTick_Handler
+
+/* Called before a task has been selected to run.  pxCurrentTCB holds a pointer
+to the task control block of the task being switched out. */
+extern int printf(const char * restrict format, ...);
+#define traceTASK_SWITCHED_IN() printf("%d IN\n", (int)pxCurrentTCB->pxTaskTag)
+#define traceTASK_SWITCHED_OUT() printf("%d OUT\n", (int)pxCurrentTCB->pxTaskTag)
 
 #endif /* FREERTOS_CONFIG_H */

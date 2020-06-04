@@ -42,7 +42,10 @@ extern void vApplicationIdleHook();
  */
 extern void vTaskA1(void *pvParameter);
 extern void vTaskA2(void *pvParameter);
-extern void vTaskA3(void *pvParameter);
+//extern void vTaskA3(void *pvParameter);
+
+const unsigned long dT1 = 500 / portTICK_PERIOD_MS;
+const unsigned long dT2 = 1000 / portTICK_PERIOD_MS;
 
 /*******************************************************************************
  * Code
@@ -58,7 +61,14 @@ int main(void)
     BOARD_BootClockRUN();
     BOARD_InitDebugConsole();
 
-    if (xTaskCreate(vTaskA1, "TaskA1", configMINIMAL_STACK_SIZE + 100, NULL, taskA1_PRIORITY, NULL) !=
+    if (xTaskCreate(vTaskA1, "TaskA1", configMINIMAL_STACK_SIZE + 100, (void *)&dT1, 1, NULL) !=
+        pdPASS)
+    {
+        PRINTF("Task creation failed!.\r\n");
+        while (1)
+            ;
+    }
+    if (xTaskCreate(vTaskA2, "TaskA2", configMINIMAL_STACK_SIZE + 100, (void *)&dT2, 1, NULL) !=
         pdPASS)
     {
         PRINTF("Task creation failed!.\r\n");

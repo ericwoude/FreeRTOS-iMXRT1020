@@ -1,4 +1,1 @@
-freertos_main.c:62:5:main	16	static
-freertos_main.c:106:13:task_1	24	static
-freertos_main.c:126:13:task_2	24	static
-freertos_main.c:146:13:task_3	24	static
+freertos_main.c:56:5:main	16	static

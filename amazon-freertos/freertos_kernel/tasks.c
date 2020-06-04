@@ -40,6 +40,9 @@ task.h is included from an application file. */
 #include "timers.h"
 #include "stack_macros.h"
 
+/* Usage for EDF scheduling */
+extern unsigned long RunTimeCounter;
+
 /* Lint e9021, e961 and e750 are suppressed as a MISRA exception justified
 because the MPU ports require MPU_WRAPPERS_INCLUDED_FROM_API_FILE to be defined
 for the header files above, but not in this file, in order to generate the
@@ -215,12 +218,24 @@ count overflows. */
  * Place the task represented by pxTCB into the appropriate ready list for
  * the task.  It is inserted at the end of the list.
  */
-#define prvAddTaskToReadyList( pxTCB )																\
-	traceMOVED_TASK_TO_READY_STATE( pxTCB );														\
-	taskRECORD_READY_PRIORITY( ( pxTCB )->uxPriority );												\
-	vListInsertEnd( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) ); \
-	tracePOST_MOVED_TASK_TO_READY_STATE( pxTCB )
-/*-----------------------------------------------------------*/
+
+#if ( configUSE_EDF_SCHEDULING == 0 )
+	#define prvAddTaskToReadyList( pxTCB )																   \
+		traceMOVED_TASK_TO_READY_STATE( pxTCB );													       \
+		taskRECORD_READY_PRIORITY( ( pxTCB )->uxPriority );												   \
+		vListInsertEnd( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) ); \
+		tracePOST_MOVED_TASK_TO_READY_STATE( pxTCB );
+#endif
+
+/* --- EDF ------------------------------------*/
+#if ( configUSE_EDF_SCHEDULING == 1)
+	#define prvAddTaskToReadyList( pxTCB )																   \
+		traceMOVED_TASK_TO_READY_STATE( pxTCB );													       \
+		taskRECORD_READY_PRIORITY( ( pxTCB )->uxPriority );												   \
+		vListEDFInsertEnd( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) ); \
+		tracePOST_MOVED_TASK_TO_READY_STATE( pxTCB );
+#endif
+/* --------------------------------------------*/
 
 /*
  * Several functions take an TaskHandle_t parameter that can optionally be NULL,
@@ -322,6 +337,13 @@ typedef struct tskTaskControlBlock 			/* The old naming convention is used to pr
 	#if( configUSE_POSIX_ERRNO == 1 )
 		int iTaskErrno;
 	#endif
+
+/* --- EDF ------------------------------------*/
+	#if( configUSE_EDF_SCHEDULING == 1 )
+		unsigned portBASE_TYPE deadline;
+		unsigned portBASE_TYPE absDeadline;
+	#endif
+/* --------------------------------------------*/
 
 } tskTCB;
 
@@ -462,6 +484,9 @@ static portTASK_FUNCTION_PROTO( prvIdleTask, pvParameters );
 
 #endif
 
+#if ( configUSE_EDF_SCHEDULING == 1 )
+	unsigned long task_ADD_DEADLINE( void * pxTCB );
+#endif
 /*
  * Used only by the idle task.  This checks to see if anything has been placed
  * in the list of tasks waiting to be deleted.  If so the task is cleaned up
@@ -812,6 +837,12 @@ static void prvAddNewTaskToReadyList( TCB_t *pxNewTCB ) PRIVILEGED_FUNCTION;
 			xReturn = errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY;
 		}
 
+		/* --- EDF ------------------------------------*/
+		#if( configUSE_EDF_SCHEDULER == 1 )
+			pxNewTCB->ulDeadline = *(unsigned long *)pvParameters;
+		#endif
+		/* --------------------------------------------*/
+
 		return xReturn;
 	}
 
@@ -1124,6 +1155,7 @@ static void prvAddNewTaskToReadyList( TCB_t *pxNewTCB )
 			pxNewTCB->uxTCBNumber = uxTaskNumber;
 		}
 		#endif /* configUSE_TRACE_FACILITY */
+
 		traceTASK_CREATE( pxNewTCB );
 
 		prvAddTaskToReadyList( pxNewTCB );
@@ -5211,4 +5243,13 @@ when performing module tests). */
 
 #endif
 
-
+/* --- EDF ------------------------------------*/
+#if ( configUSE_EDF_SCHEDULING == 1 )
+	unsigned long task_ADD_DEADLINE( void * pxTCB )
+	{
+		TCB_t * TempTCB;
+		TempTCB = ( tskTCB * )pxTCB;
+		return TempTCB->absDeadline = TempTCB->deadline + RunTimeCounter;
+	}
+#endif
+/* --------------------------------------------*/

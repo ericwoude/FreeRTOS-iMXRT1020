@@ -387,8 +387,11 @@ void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) PRIV
  * \page vListInsertEnd vListInsertEnd
  * \ingroup LinkedList
  */
-void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+void vListInsertEnd( List_t *const pxList, ListItem_t *const pxNewListItem ) PRIVILEGED_FUNCTION;
 
+void vListEDFInsertEnd( List_t *const pxList, ListItem_t *const pxNewListItem ) PRIVILEGED_FUNCTION;
+
+void vListInsertOverFlow( List_t * const pxList, ListItem_t * const pxNewListItem );
 /*
  * Remove an item from a list.  The list item has a pointer to the list that
  * it is in, so only the list item need be passed into the function.

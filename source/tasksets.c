@@ -44,14 +44,13 @@ void vTaskA3(void *pvParameters);
 /*******************************************************************************
  * Code
  ******************************************************************************/
-/*!
- * @brief Task responsible for printing of "Task 1" message.
- */
 void vTaskA1(void *pvParameters)
 {
 	TickType_t xLastWakeTime;
-	const TickType_t xFrequency = 150 / portTICK_PERIOD_MS;
+	const TickType_t xFrequency = 500 / portTICK_PERIOD_MS;
 	xLastWakeTime = xTaskGetTickCount();
+
+	vTaskSetApplicationTaskTag(NULL, ( void * ) 1);
 
 	for (;;)
 	{
@@ -59,11 +58,50 @@ void vTaskA1(void *pvParameters)
 		unsigned long startCount = TimerCount();
 
 		/* Do stuff for given duration in milliseconds */
-		ComputationTime(45);
+		ComputationTime(200);
 
 		TimerLog("Task 1", TimerCount() - startCount);
 	}
 }
+void vTaskA2(void *pvParameters)
+{
+	TickType_t xLastWakeTime;
+	const TickType_t xFrequency = 1000 / portTICK_PERIOD_MS;
+	xLastWakeTime = xTaskGetTickCount();
+
+	vTaskSetApplicationTaskTag(NULL, ( void * ) 2);
+
+	for (;;)
+	{
+		vTaskDelayUntil(&xLastWakeTime, xFrequency);
+		unsigned long startCount = TimerCount();
+
+		/* Do stuff for given duration in milliseconds */
+		ComputationTime(300);
+
+		TimerLog("Task 2", TimerCount() - startCount);
+	}
+}
+/*!
+ * @brief Task responsible for printing of "Task 1" message.
+ */
+//void vTaskA1(void *pvParameters)
+//{
+//	TickType_t xLastWakeTime;
+//	const TickType_t xFrequency = 150 / portTICK_PERIOD_MS;
+//	xLastWakeTime = xTaskGetTickCount();
+//
+//	for (;;)
+//	{
+//		vTaskDelayUntil(&xLastWakeTime, xFrequency);
+//		unsigned long startCount = TimerCount();
+//
+//		/* Do stuff for given duration in milliseconds */
+//		ComputationTime(50);
+//
+//		TimerLog("Task 1", TimerCount() - startCount);
+//	}
+//}
 
 /*!
  * @brief Task responsible for printing of "Task 2" message.

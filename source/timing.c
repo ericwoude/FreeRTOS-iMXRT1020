@@ -158,7 +158,7 @@ void TimerPrint()
 			/* Performs a non-blocking receive. */
 			if (xQueueReceive(xInfoQueue, &info, ( TickType_t ) 0 ) == pdPASS)
 			{
-				PRINTF("%s %u\n", info->name, info->time);
+//				PRINTF("%s %u\n", info->name, info->time);
 //				free(info);
 			}
 		}

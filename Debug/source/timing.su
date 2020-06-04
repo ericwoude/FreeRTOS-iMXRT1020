@@ -8,8 +8,8 @@ fsl_gpt.h:496:20:GPT_ClearStatusFlags	16	static
 timing.c:62:6:QueueInit	8	static
 timing.c:76:6:ConfigureRunTimeStatsTimer	48	static
 timing.c:111:6:GPT2_IRQHandler	8	static
-timing.c:123:6:TimerReset	4	static
+timing.c:123:15:TimerCount	4	static
 timing.c:131:6:TimerLog	40	static
 timing.c:150:6:TimerPrint	16	static
-timing.c:170:6:vApplicationIdleHook	8	static
-timing.c:178:6:ComputationTime	24	static
+timing.c:171:6:vApplicationIdleHook	8	static
+timing.c:179:6:ComputationTime	24	static
